@@ -99,3 +99,33 @@ Por padrão, este frontend está configurado para tentar se comunicar com `http:
 *   **Erro "npm não é reconhecido"**: Você provavelmente não instalou o Node.js ou precisa reiniciar o computador após a instalação.
 *   **Erro de Permissão (EACCES) no Mac**: Tente rodar `sudo npm install` e digite sua senha do Mac.
 *   **Porta em uso**: Se a porta 5173 estiver ocupada, o Vite usará automaticamente a próxima (5174, 5175, etc.). Olhe no terminal qual endereço ele indicou.
+
+---
+
+## Telas do Sistema
+
+Abaixo você encontra uma visão geral das principais telas do sistema e suas funcionalidades.
+
+### 1. Dashboard
+![Dashboard](./docs/images/dashboard.png)
+
+O **Dashboard** é a tela inicial do sistema. Ele oferece uma visão gerencial rápida do processamento de documentos.
+*   **Métricas Principais**: Visualize o total de documentos, quantos foram concluídos com sucesso, quantos estão em processamento e se houve erros.
+*   **Processamentos Recentes**: Lista os últimos arquivos enviados e seus status atuais.
+*   **Status do Sistema**: Monitora a conexão com a API Itera em tempo real, exibindo tempo de resposta e taxa de sucesso.
+
+### 2. Upload de Documentos
+![Upload](./docs/images/upload.png)
+
+A tela de **Upload** permite enviar novos documentos para processamento.
+*   **Drag & Drop**: Arraste arquivos PDF diretamente para a área pontilhada ou clique para selecionar do seu computador.
+*   **Metadados**: Preencha o CNPJ da empresa, a origem do documento e uma descrição opcional antes de enviar.
+*   **Envio em Lote**: Suporta o envio de múltiplos arquivos simultaneamente.
+
+### 3. Monitoramento
+![Monitoramento](./docs/images/monitoramento.png)
+
+A tela de **Monitoramento** permite acompanhar o status detalhado de cada documento.
+*   **Atualização em Tempo Real**: A lista se atualiza automaticamente para refletir mudanças de status (de "Processando" para "Concluído", por exemplo).
+*   **Filtros**: Use a barra de busca para encontrar documentos específicos por nome ou CNPJ.
+*   **Ações**: Botões rápidos para visualizar detalhes ou baixar os resultados da extração de dados.
